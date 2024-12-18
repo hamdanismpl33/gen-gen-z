@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.status {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.status.error {
+    color: red;
+}
+
+/* Gallery Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid responsif */
+    gap: 15px; /* Jarak antar gambar */
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 100%; /* Membuat item galeri mengisi kontainer */
+    padding-top: 100%; /* Membuat tinggi item sama dengan lebar (square aspect) */
+    background-color: #f9f9f9; /* Latar belakang item galeri */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang terpotong */
+    border-radius: 8px; /* Membuat sudut melengkung */
+}
+
+/* Gaya Gambar */
+.gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menyesuaikan gambar agar menutupi area tanpa distorsi */
+    border-radius: 8px; /* Sudut gambar juga melengkung sesuai kontainer */
+}
+
+/* Caption di Bawah Gambar */
+.gallery-item figcaption {
+    position: absolute;
+    bottom: 0; /* Menempatkan caption di bawah gambar */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Latar belakang semi transparan */
+    color: #fff; /* Warna teks putih */
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem; /* Ukuran font lebih besar agar mudah dibaca */
+    border-top: 1px solid #ddd; /* Garis pemisah antara gambar dan caption */
+    border-radius: 0 0 8px 8px; /* Sudut melengkung di bawah caption */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+
